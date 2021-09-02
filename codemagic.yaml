@@ -3,8 +3,8 @@ workflows:
     name: Sonar
     environment:
       vars:
-        SONAR_TOKEN: Encrypted(Z0FBQUFBQmhNSU9ZR2VRbUJ1UmRkNFA3eEtJVXdLYlo2LXRiZkxCa04yMFFRdGwtaVRjYjRXY1dnU1hHMWdvSHpoRkh3UDlWWTBKcHBfcnZJX1BIbWtmOEtzVkh6XzZUd0VDenE3aGR2eVRsVno5eGZZWlRGcFh2R1IyVzBZdTdWVW0yYm9WRm5MVU0=)
-        SONAR_ORG_KEY: marcin-majewski-sonarsource-1
+        SONAR_TOKEN: Encrypted(Z0FBQUFBQmhNSmZYelE2cHhfWllNVVMwb2R2elJoZS1Ga2Z5WTl5a3JSWXV2X0xMTjlkRmJFcC1iUkhnLXN6NjFoclBlbUZyOFN6LWhxekg0LXVmTGUweWNiLXRpVEVNM1FNRzN0bE5PS1I4UWtTejlOTFQyT0VYZ2hvTDZzeXZ6bXR5OUdwOW0wRlk=)
+        SONAR_ORG_KEY: marcin-majewski-sonarsource
         SONAR_PROJECT_KEY: marcin-majewski-sonarsource_react-test
     triggering:
       events:
@@ -33,7 +33,7 @@ workflows:
         sonar-scanner \
         -Dsonar.projectKey=$SONAR_PROJECT_KEY \
         -Dsonar.organization=$SONAR_ORG_KEY \
-        -Dsonar.host.url=https://mmsc.eu.ngrok.io \
+        -Dsonar.host.url=https://squad-2-core.sc-dev.io \
         -Dsonar.login=$SONAR_TOKEN \
         -Dsonar.sources=. \
         -Dsonar.c.file.suffixes=- \

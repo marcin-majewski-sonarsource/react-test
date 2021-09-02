@@ -3,9 +3,9 @@ workflows:
     name: Sonar
     environment:
       vars:
-        SONAR_TOKEN: Encrypted(Z0FBQUFBQmhNSUlMOFJxTk1FY1JaZDZ3QXJ6c3oyUklQUXM1OHJaejFWOTNXbjBad1ZpSWhwNWpiNkR5YnJZRTdFczlLekwzRWZEMXRNbXA5TU1jbGg5Wjk1eWkyQnFENW8tMEFxbkM3WHdOcTdMNGtFZFBjcW9nOXNvQW9VeklJM1hWakpMVkxvTHI=)
+        SONAR_TOKEN: Encrypted(Z0FBQUFBQmhNSU1FS0cyM2llWlZpeko1QmJaakoxZ1hQRVhjRXpMWjMzajRYRnpUNXU3T08zeFhkdTVJRy1rRGZCNnI5SGlwYm51dHVKSGhLUmIzYmh1NmtxOW1pbDRvODM1a2hQdHFrUDRUUlBnbFRfNlBicHJ6akc0ZXpsdHQwMm1WMGlRbkhnb08=)
         SONAR_ORG_KEY: marcin-majewski-sonarsource-1
-        SONAR_PROJECT_KEY: marcin-majewski-sonarsource_react-native-boilerplate
+        SONAR_PROJECT_KEY: marcin-majewski-sonarsource_react-test
     triggering:
       events:
         - push

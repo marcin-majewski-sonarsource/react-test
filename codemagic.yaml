@@ -35,4 +35,7 @@ workflows:
         -Dsonar.organization=$SONAR_ORG_KEY \
         -Dsonar.host.url=https://mmsc.eu.ngrok.io \
         -Dsonar.login=$SONAR_TOKEN \
-        -Dsonar.sources=.
+        -Dsonar.sources=. \
+        -Dsonar.c.file.suffixes=- \
+        -Dsonar.cpp.file.suffixes=- \
+        -Dsonar.objc.file.suffixes=-

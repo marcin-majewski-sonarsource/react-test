@@ -3,7 +3,7 @@ workflows:
     name: Sonar
     environment:
       vars:
-        SONAR_TOKEN: Encrypted(Z0FBQUFBQmhNSU1FS0cyM2llWlZpeko1QmJaakoxZ1hQRVhjRXpMWjMzajRYRnpUNXU3T08zeFhkdTVJRy1rRGZCNnI5SGlwYm51dHVKSGhLUmIzYmh1NmtxOW1pbDRvODM1a2hQdHFrUDRUUlBnbFRfNlBicHJ6akc0ZXpsdHQwMm1WMGlRbkhnb08=)
+        SONAR_TOKEN: Encrypted(Z0FBQUFBQmhNSU9ZR2VRbUJ1UmRkNFA3eEtJVXdLYlo2LXRiZkxCa04yMFFRdGwtaVRjYjRXY1dnU1hHMWdvSHpoRkh3UDlWWTBKcHBfcnZJX1BIbWtmOEtzVkh6XzZUd0VDenE3aGR2eVRsVno5eGZZWlRGcFh2R1IyVzBZdTdWVW0yYm9WRm5MVU0=)
         SONAR_ORG_KEY: marcin-majewski-sonarsource-1
         SONAR_PROJECT_KEY: marcin-majewski-sonarsource_react-test
     triggering:
@@ -18,6 +18,10 @@ workflows:
         - pattern: '*'
           include: true
     scripts:
+      - |
+        #!/bin/sh
+        set -ex
+        printenv
       - |
         # download and install SonarQube
         wget -O $FCI_BUILD_DIR/sonar-scanner.zip https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.4.0.2170-macosx.zip
